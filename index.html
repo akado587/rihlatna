@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Our Trip</title>
+  <meta name="description" content="Our family trip guide">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F4F4F1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0C0D10" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Our Trip">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- PIN gate (texts are filled from trip.js at boot) -->
+  <div id="pin-screen">
+    <div class="pin-mark"><span class="ic" data-icon="airplane-takeoff"></span></div>
+    <h1>Our Trip</h1>
+    <div class="sub">Enter the family code</div>
+    <div class="pin-dots" id="pin-dots"><i></i><i></i><i></i><i></i></div>
+    <div class="pin-pad" id="pin-pad"></div>
+  </div>
+
+  <!-- app -->
+  <main id="app"></main>
+
+  <!-- tab bar (labels are filled from trip.js at boot) -->
+  <nav class="tabbar" id="tabbar" hidden>
+    <button class="tab" data-tab="trip">
+      <span class="ic" data-icon="map-pin"></span><span class="lbl">Trip</span>
+    </button>
+    <button class="tab" data-tab="info">
+      <span class="ic" data-icon="info"></span><span class="lbl">Essentials</span>
+    </button>
+  </nav>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/qrcode.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/trip.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

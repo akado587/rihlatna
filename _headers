@@ -1,0 +1,6 @@
+/tickets/*.pkpass
+  Content-Type: application/vnd.apple.pkpass
+  Content-Disposition: attachment
+
+/*
+  X-Robots-Tag: noindex, nofollow

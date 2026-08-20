@@ -1,0 +1,9 @@
+.DS_Store
+**/.DS_Store
+
+# Your private booking documents stay on your computer.
+# The AI assistant reads them from here; they are never committed or deployed.
+bookings/*
+!bookings/README.md
+.vercel
+.env*
